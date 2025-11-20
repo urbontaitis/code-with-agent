@@ -2647,7 +2647,7 @@ No need to stash or switch branches
 Create worktree:
 ────────────────
 $ git worktree add ../feature-branch feature-name
-$ git worktree add ../hotfix main
+$ git worktree add -b hotfix-bug-123 ../hotfix main
 
 ```
 
