@@ -181,9 +181,9 @@ Slide 3: Why Claude Code for Java?
 • EXERCISE 1: Prompting
 • Configuration (CLAUDE.md)
 • EXERCISE 2: CLAUDE.md
-• BREAK
 • Custom Commands
 • EXERCISE 3: Commands
+• BREAK - ☕️ + 🍕
 • Skills & Agents
 • EXERCISE 4: Kafka
 • MCP Overview
