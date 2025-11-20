@@ -1,9 +1,0 @@
-spring:
-  data:
-    mongodb:
-      uri: mongodb://${embedded.mongodb.host}:${embedded.mongodb.port}/${embedded.mongodb.database}
-  flyway:
-    enabled: false
-  jpa:
-    hibernate:
-      ddl-auto: none

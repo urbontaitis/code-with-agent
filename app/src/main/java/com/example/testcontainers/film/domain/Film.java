@@ -3,17 +3,16 @@ package com.example.testcontainers.film.domain;
 import com.example.testcontainers.film.dto.FilmDto;
 import com.example.testcontainers.film.dto.FilmTypeDto;
 import java.time.LocalDate;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Document
 @Entity
+@Table(name = "film")
 class Film {
   @Id
   private String title;
   private String type;
-
   private LocalDate releaseDate;
 
   protected Film() {}

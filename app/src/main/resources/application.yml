@@ -2,16 +2,19 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
-    database: mysql
+    database: postgresql
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
     username: demo
     password: SecurePa55w0rd
-    url: jdbc:mysql://localhost:3306/demo
+    url: jdbc:postgresql://localhost:5432/demo
   security:
     user:
       name: user
       password: password
   flyway:
     enabled: true
+  threads:
+    virtual:
+      enabled: true
 

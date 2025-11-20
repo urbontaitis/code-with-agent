@@ -1,12 +1,11 @@
 services:
   db:
-    image: mysql:oracle
+    image: postgres:17
     ports:
-      - "3306:3306"
+      - "5432:5432"
     volumes:
-      - ./.data/db:/var/lib/mysql
+      - ./.data/db:/var/lib/postgresql/data
     environment:
-      - MYSQL_DATABASE=demo
-      - MYSQL_USER=demo
-      - MYSQL_PASSWORD=SecurePa55w0rd
-      - MYSQL_ROOT_PASSWORD=SecureRootPa55w0rd
+      - POSTGRES_DB=demo
+      - POSTGRES_USER=demo
+      - POSTGRES_PASSWORD=SecurePa55w0rd

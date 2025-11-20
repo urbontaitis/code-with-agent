@@ -1,9 +1,5 @@
 package com.example.testcontainers.film
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
-
 import com.example.testcontainers.TestContainersApplication
 import com.example.testcontainers.film.domain.FilmFacade
 import org.springframework.beans.factory.annotation.Autowired
@@ -14,8 +10,12 @@ import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.web.servlet.MockMvc
 import spock.lang.Specification
 
-@ActiveProfiles(profiles = ["h2"]) //local
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
+
 @AutoConfigureMockMvc
+@ActiveProfiles("it")
 @SpringBootTest(classes = [TestContainersApplication.class])
 class FilmIntegrationSpec extends Specification implements SampleFilms {
 

@@ -1,8 +1,0 @@
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${embedded.mysql.user}
-    password: ${embedded.mysql.password}
-    url: jdbc:mysql://${embedded.mysql.host}:${embedded.mysql.port}/${embedded.mysql.schema}
-  flyway:
-    enabled: true

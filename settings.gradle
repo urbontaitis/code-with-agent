@@ -1,6 +1,3 @@
-rootProject.name = 'testcontainers'
-include 'tc-mysql'
-include 'tcp-mysql'
-include 'tcp-mongo'
+rootProject.name = 'code-with-agent'
 include 'app'
 
